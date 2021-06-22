@@ -459,27 +459,34 @@
           </svg>
         </button>
         <div class="re-call-form-container">
-          <form name="re-call" autocomplete="">
+          <form name="re-call" autocomplete="on" class="re-call-form">
             <b class="re-call-text">Оставьте свои данные, мы вам перезвоним</b>
             <div class="form-field">
               <label for="name" class="form-label text">Имя</label>
-              <input type="text" id="name" class="form-input">
+              <input type="text" id="name" name="name" class="form-input">
             </div>
             <div class="form-field">
               <label for="tel" class="form-label text">Телефон</label>
-              <input type="tel" id="tel" class="form-input">
+              <input type="tel" id="tel" name="tel" class="form-input">
             </div>
             <div class="form-field">
               <label for="email" class="form-label text">Почта</label>
-              <input type="email" id="email" class="form-input">
+              <input type="email" id="email" name="email" class="form-input">
             </div>
-            <div class="form-field">
-
-            </div>
-            <div class="form-field">
+            <div class="form-field comment">
               <label for="comment" class="form-label text">Комментарий</label>
-              <textarea name="comment" id="comment" class="form-textarea"></textarea>
+              <textarea name="comment" id="comment" name="comment" class="form-textarea"></textarea>
             </div>
+            <div class="form-field terms-of-use-container">
+              <div class="for-checkbox-margin">
+                <input type="checkbox" value="agree" name="terms-of-use" id="terms-of-use" class="form-checkbox">
+              </div>
+              <label for="terms-of-use" class="form-checkbox-text">
+                Соглашаюсь с рассылкой и принимаю
+                <a href="" class="terms-of-use-link">Условия договора</a>
+              </label>
+            </div>
+            <button type="submit" class="form-button button">Отправить</button>
           </form>
         </div>
       </div>
