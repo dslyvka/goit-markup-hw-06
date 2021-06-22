@@ -29,7 +29,7 @@
             <li class="nav-list-item">
               <a href="./portfolio.html" class="nav-link link">Портфолио</a>
             </li>
-            <li class="nav-list-item"><a href="" class="nav-link link">Контакты</a></li>
+            <li class="nav-list-item"><a href="#contacts" class="nav-link link">Контакты</a></li>
           </ul>
         </nav>
         <ul class="header-contacts-list list">
@@ -387,7 +387,7 @@
       <div class="container footer-container">
         <div class="address-container">
           <a href="./index.html" class="logo">Web<span class="footer-logo">Studio</span></a>
-          <address class="page-address">
+          <address class="page-address" id="contacts">
             <p class="address-text text">г. Киев, пр-т Леси Украинки, 26</p>
             <ul class="address-list list">
               <li class="address-list-item">
@@ -464,24 +464,31 @@
             <div class="form-field">
               <label for="name" class="form-label text">Имя</label>
               <input type="text" id="name" name="name" class="form-input">
+              <svg class="input-icon-name input-icon">
+                <use href="./images/icons.svg#icon-name-input"></use>
+              </svg>
             </div>
             <div class="form-field">
               <label for="tel" class="form-label text">Телефон</label>
               <input type="tel" id="tel" name="tel" class="form-input">
+              <svg class="input-icon-tel input-icon">
+                <use href="./images/icons.svg#icon-tel-input"></use>
+              </svg>
             </div>
             <div class="form-field">
               <label for="email" class="form-label text">Почта</label>
               <input type="email" id="email" name="email" class="form-input">
+              <svg class="input-icon-mail input-icon">
+                <use href="./images/icons.svg#icon-mail-input"></use>
+              </svg>
             </div>
             <div class="form-field comment">
               <label for="comment" class="form-label text">Комментарий</label>
               <textarea name="comment" id="comment" name="comment" class="form-textarea"></textarea>
             </div>
             <div class="form-field terms-of-use-container">
-              <div class="for-checkbox-margin">
-                <input type="checkbox" value="agree" name="terms-of-use" id="terms-of-use" class="form-checkbox">
-              </div>
-              <label for="terms-of-use" class="form-checkbox-text">
+              <label class="form-checkbox-text">
+                <input type="checkbox" value="agree" name="terms-of-use" class="form-checkbox">
                 Соглашаюсь с рассылкой и принимаю
                 <a href="" class="terms-of-use-link">Условия договора</a>
               </label>

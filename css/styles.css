@@ -1020,6 +1020,8 @@ image {
 .mailing-form-label {
   display: block;
 
+  cursor: pointer;
+
   text-transform: uppercase;
   font-weight: 700;
   font-size: 14px;
@@ -1046,11 +1048,29 @@ image {
 
   margin-right: 12px;
 
+  cursor: pointer;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+
+  color: var(--transparent-white-color);
+
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
 
   background-color: var(--hero-background-color);
+}
+
+.email-input-area::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+
+  color: var(--transparent-white-color);
 }
 
 .subscribe-mailing-button {
@@ -1104,12 +1124,16 @@ image {
 
 .form-field {
   margin-bottom: 10px;
+
+  position: relative;
 }
 
 .form-label {
   display: block;
 
   margin-bottom: 4px;
+
+  cursor: pointer;
 
   font-size: 12px;
   line-height: 1.16;
@@ -1128,8 +1152,57 @@ image {
   padding-bottom: 12px;
   padding-left: 42px;
 
+  cursor: pointer;
+
   border: 1px solid var(--form-input-border-color);
   border-radius: 4px;
+}
+
+.form-input:focus, 
+.form-input:active,
+.form-textarea:focus, 
+.form-textarea:active {
+  outline: none;   
+  border: 1px solid var(--main-active-color);
+  transition: border 250ms var(--transition);
+}
+
+.form-input:focus + .input-icon, 
+.form-input:active + .input-icon,
+.form-textarea:focus + .input-icon, 
+.form-textarea:active + .input-icon {
+  fill: var(--main-active-color);
+  transition: fill 250ms var(--transition);
+}
+
+.input-icon-name {
+  position: absolute;
+
+  top: 30px;
+  left: 15px;
+
+  width: 12px;
+  height: 12px;
+}
+
+.input-icon-tel {
+  position: absolute;
+
+  top: 30.26px;
+  left: 14.27px;
+
+  width: 13px;
+  height: 13px;
+}
+
+.input-icon-mail {
+  position: absolute;
+
+  top: 32px;
+  left: 13.5px;
+
+  width: 15px;
+  height: 12px;
 }
 
 .form-textarea {
@@ -1165,11 +1238,19 @@ image {
   margin-bottom: 30px;
 }
 
-.for-checkbox-margin {
+.form-checkbox {
   margin-right: 7px;
+
+  cursor: pointer;
 }
 
 .form-checkbox-text {
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
