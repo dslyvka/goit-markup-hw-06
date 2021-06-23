@@ -15,6 +15,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <script src="./js/jquery-3.6.0.min.js"></script>
   </head>
   <body>
     <!-- header -->
@@ -29,7 +30,7 @@
             <li class="nav-list-item">
               <a href="./portfolio.html" class="nav-link link">Портфолио</a>
             </li>
-            <li class="nav-list-item"><a href="#contacts" class="nav-link link">Контакты</a></li>
+            <li class="nav-list-item" id="anchor"><a href="#contacts" class="nav-link link">Контакты</a></li>
           </ul>
         </nav>
         <ul class="header-contacts-list list">
@@ -464,21 +465,21 @@
             <div class="form-field">
               <label for="name" class="form-label text">Имя</label>
               <input type="text" id="name" name="name" class="form-input">
-              <svg class="input-icon-name input-icon">
+              <svg class="input-icon">
                 <use href="./images/icons.svg#icon-name-input"></use>
               </svg>
             </div>
             <div class="form-field">
               <label for="tel" class="form-label text">Телефон</label>
               <input type="tel" id="tel" name="tel" class="form-input">
-              <svg class="input-icon-tel input-icon">
+              <svg class="input-icon">
                 <use href="./images/icons.svg#icon-tel-input"></use>
               </svg>
             </div>
             <div class="form-field">
               <label for="email" class="form-label text">Почта</label>
               <input type="email" id="email" name="email" class="form-input">
-              <svg class="input-icon-mail input-icon">
+              <svg class="input-icon">
                 <use href="./images/icons.svg#icon-mail-input"></use>
               </svg>
             </div>
@@ -489,7 +490,10 @@
             <div class="form-field terms-of-use-container">
               <label class="form-checkbox-text">
                 <input type="checkbox" value="agree" name="terms-of-use" class="form-checkbox">
-                Соглашаюсь с рассылкой и принимаю
+                    <svg class="checkbox-icon">
+                      <use href="./images/icons.svg#icon-check"></use>
+                    </svg>
+                  Соглашаюсь с рассылкой и принимаю 
                 <a href="" class="terms-of-use-link">Условия договора</a>
               </label>
             </div>
@@ -499,5 +503,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/scroll.js"></script>
   </body>
 </html>
