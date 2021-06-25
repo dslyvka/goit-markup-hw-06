@@ -188,6 +188,8 @@ image {
 
   padding-top: 40px;
   padding-bottom: 40px;
+  padding-right: 39px;
+  padding-left: 41px;
 
   border-radius: 0;
 
@@ -283,6 +285,10 @@ image {
 
 .current-page.nav-link {
   color: var(--main-active-color);
+}
+
+.nav-anchor:focus {
+  color: var(--title-color)
 }
 
 .current-page {
@@ -901,6 +907,7 @@ image {
 }
 
 .address-container {
+  width: 231px;
   margin-right: 70px;
 }
 
@@ -957,6 +964,10 @@ image {
 
 .address-list:last-child {
   display: block;
+}
+
+.social-media-container {
+  width: 206px;
 }
 
 .social-media-section {
@@ -1162,13 +1173,22 @@ image {
   border-radius: 4px;
 }
 
+.form-input, .form-textarea {
+  transition: border 250ms var(--transition);
+}
+
+
+
 .form-input:focus, 
 .form-input:active,
 .form-textarea:focus, 
 .form-textarea:active {
   outline: none;   
   border: 1px solid var(--main-active-color);
-  transition: border 250ms var(--transition);
+}
+
+.input-icon {
+  transition: fill 250ms var(--transition);
 }
 
 .form-input:focus + .input-icon, 
@@ -1176,7 +1196,6 @@ image {
 .form-textarea:focus + .input-icon, 
 .form-textarea:active + .input-icon {
   fill: var(--main-active-color);
-  transition: fill 250ms var(--transition);
 }
 
 .input-icon {
@@ -1218,6 +1237,7 @@ image {
 
 .terms-of-use-container {
   display: flex;
+  justify-content: center;
   align-items: center;
   margin-bottom: 30px;
 }
